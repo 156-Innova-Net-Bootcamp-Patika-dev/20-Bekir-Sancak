@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -53,7 +53,7 @@ namespace MyWebApi.Controllers
         }
 
 
-        [HttpPost("update")]
+        [HttpPut("update")]
         public IActionResult Update([FromBody] Book book)
         {
             var result = _books.FirstOrDefault(c => c.BookId == book.BookId);
@@ -70,7 +70,7 @@ namespace MyWebApi.Controllers
             return Ok(result);
         }
 
-        [HttpPost("delete")]
+        [HttpDelete("delete")]
         public IActionResult Delete([FromBody] Book book)
         {
             Book result = _books.FirstOrDefault(c => c.BookId == book.BookId);
