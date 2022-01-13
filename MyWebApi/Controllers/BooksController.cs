@@ -59,7 +59,7 @@ namespace MyWebApi.Controllers
         /// </summary>
         /// <param name="book"></param>
         /// <returns></returns>
-        [HttpGet("searchBook")]
+        [HttpGet("searchbook")]
         public IActionResult GetBook([FromQuery] string book)
         {
             if (!string.IsNullOrEmpty(book))
@@ -76,7 +76,7 @@ namespace MyWebApi.Controllers
         /// </summary>
         /// <param name="writer"></param>
         /// <returns></returns>
-        [HttpGet("searchAuthor")]
+        [HttpGet("searchauthor")]
         public IActionResult SearchAuthor([FromQuery] string author)
         {
            if(!string.IsNullOrEmpty(writer))
@@ -93,8 +93,8 @@ namespace MyWebApi.Controllers
         /// </summary>
         /// <param name="publisher"></param>
         /// <returns></returns>
-        [HttpGet("searchPublisher")]
-        public IActionResult SearchPublisher([FromQuery] string publisher)
+        [HttpGet("searchpublisher")]
+        public IActionResult Searchpublisher([FromQuery] string publisher)
         {
             if (!string.IsNullOrEmpty(publisher))
             {
