@@ -26,7 +26,7 @@ namespace MyWebApi.Controllers
         }
 
         /// <summary>
-        /// Kitap listesi getirir
+        /// Kitap listesini getirir
         /// </summary>
         /// <returns></returns>
 
@@ -51,7 +51,7 @@ namespace MyWebApi.Controllers
                 return BadRequest("Kitap bulunamadı");
             }
 
-            return Ok(result);
+            return Ok("Kitap bulundu");
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace MyWebApi.Controllers
             result.PublicationYear = book.PublicationYear;
 
 
-            return Ok(result);
+            return Ok("Kitap güncellendi");
         }
 
         /// <summary>
@@ -108,7 +108,7 @@ namespace MyWebApi.Controllers
             _books.Remove(result);
 
 
-            return Ok(result);
+            return Ok("Kitap silindi");
         }
     }
 }
