@@ -77,11 +77,11 @@ namespace MyWebApi.Controllers
         /// <param name="writer"></param>
         /// <returns></returns>
         [HttpGet("searchAuthor")]
-        public IActionResult SearchWriter([FromQuery] string writer)
+        public IActionResult SearchAuthor([FromQuery] string author)
         {
            if(!string.IsNullOrEmpty(writer))
             {
-              var result=  _books.Where(b => b.Author.ToLower().Contains(writer.ToLower())).ToList();
+              var result=  _books.Where(b => b.Author.ToLower().Contains(author.ToLower())).ToList();
                 return Ok(result);
             }
 
