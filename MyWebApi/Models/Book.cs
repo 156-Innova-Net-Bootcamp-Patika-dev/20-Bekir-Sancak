@@ -9,11 +9,11 @@ namespace MyWebApi.Entities
     public class Book
     {
        
+        
         public int BookId { get; set; }
-
         public string BookName { get; set; }
-        public string Writer { get; set; }
+        public string Author { get; set; }
         public string Publisher { get; set; }
-        public int PublicationYear { get; set; }
+        public int PublishDate { get; set; }
     }
 }
