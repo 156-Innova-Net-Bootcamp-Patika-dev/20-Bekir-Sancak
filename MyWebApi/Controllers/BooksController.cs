@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyWebApi.Entities;
 using System;
@@ -79,7 +79,7 @@ namespace MyWebApi.Controllers
         [HttpGet("searchauthor")]
         public IActionResult SearchAuthor([FromQuery] string author)
         {
-           if(!string.IsNullOrEmpty(writer))
+           if(!string.IsNullOrEmpty(author))
             {
               var result=  _books.Where(b => b.Author.ToLower().Contains(author.ToLower())).ToList();
                 return Ok(result);
@@ -94,7 +94,7 @@ namespace MyWebApi.Controllers
         /// <param name="publisher"></param>
         /// <returns></returns>
         [HttpGet("searchpublisher")]
-        public IActionResult Searchpublisher([FromQuery] string publisher)
+        public IActionResult SearchPublisher([FromQuery] string publisher)
         {
             if (!string.IsNullOrEmpty(publisher))
             {
