@@ -42,7 +42,7 @@ namespace WebApi.Controllers
 
 
         /// <summary>
-        /// bir categoryId'ye göre category getirir.
+        /// categoryId'ye göre category getirir.
         /// </summary>
         /// <returns></returns>
 
@@ -76,7 +76,7 @@ namespace WebApi.Controllers
            
         }
         /// <summary>
-        /// Bir category ekler
+        /// category ekler
         /// </summary>
         /// <returns></returns>
 
@@ -100,7 +100,7 @@ namespace WebApi.Controllers
         }
 
         /// <summary>
-        /// bir categoryId'ye göre category siler
+        ///categoryId'ye göre category siler
         /// </summary>
         /// <returns></returns>
         [HttpDelete("delete")]
