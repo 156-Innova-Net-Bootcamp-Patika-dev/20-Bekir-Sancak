@@ -37,7 +37,7 @@ namespace WebApi.Controllers
             return Ok(result);
         }
         /// <summary>
-        /// bir productId ye göre product getirir.
+        /// productId ye göre product getirir.
         /// </summary>
         /// <param name="productId"></param>
         /// <returns></returns>
@@ -54,7 +54,7 @@ namespace WebApi.Controllers
         }
 
         /// <summary>
-        /// bir productName göre product getirir.
+        /// productName göre product getirir.
         /// </summary>
         /// <param name="productId"></param>
         /// <returns></returns>
@@ -73,7 +73,7 @@ namespace WebApi.Controllers
             
         }
         /// <summary>
-        /// bir product ekler
+        ///product ekler
         /// </summary>
         /// <param name="createCategoryVm"></param>
         /// <returns></returns>
@@ -98,7 +98,7 @@ namespace WebApi.Controllers
         }
 
         /// <summary>
-        /// bir productId 'ye göre bir product siler.
+        /// productId 'ye göre bir product siler.
         /// </summary>
         /// <param name="productId"></param>
         /// <returns></returns>
