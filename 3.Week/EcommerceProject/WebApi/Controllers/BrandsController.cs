@@ -40,7 +40,7 @@ namespace WebApi.Controllers
         }
 
         /// <summary>
-        /// bir brandId 'ye göre brand getirir.
+        /// brandId'ye göre brand getirir.
         /// </summary>
         /// <param name="brandId"></param>
         /// <returns></returns>
@@ -57,7 +57,7 @@ namespace WebApi.Controllers
 
 
         /// <summary>
-        /// bir brandName göre brand getirir.
+        /// brandName göre brand getirir.
         /// </summary>
         /// <param name="brandName"></param>
         /// <returns></returns>
@@ -87,7 +87,7 @@ namespace WebApi.Controllers
         }
 
         /// <summary>
-        /// bir UpdateBrandVm göre brand günceller
+        /// UpdateBrandVm göre brand günceller
         /// </summary>
         /// <param name="updateBrandVm"></param>
         /// <returns></returns>
@@ -100,7 +100,7 @@ namespace WebApi.Controllers
         }
 
         /// <summary>
-        /// bir brandId'ye göre brand siler
+        /// brandId'ye göre brand siler
         /// </summary>
         /// <param name="brandId"></param>
         /// <returns></returns>
